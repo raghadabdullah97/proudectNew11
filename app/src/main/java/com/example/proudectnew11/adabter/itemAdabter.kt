@@ -19,11 +19,7 @@ import com.example.proudectnew11.model.product
 import com.example.proudectnew11.objectPhone
 
 
-class itemAdabter(
-    private val context: Context,
-    private val dataset: List<product>
-): RecyclerView.Adapter<itemAdabter
-.ItemViewHolder>() {
+class itemAdabter(private val context: Context, private val dataset: List<product>): RecyclerView.Adapter<itemAdabter.ItemViewHolder>() {
     class ItemViewHolder(private val view: View): RecyclerView.ViewHolder(view) {
         val buybutoon: Button = view.findViewById(R.id.buybutoon)
         val priceview: TextView = view.findViewById(R.id.priceproduct)
